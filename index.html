@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capytal Cable Corp</title>
     <style>
         body {
@@ -11,7 +10,6 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-            color: #333;
         }
         header {
             background-color: #003366;
@@ -20,50 +18,56 @@
             text-align: center;
         }
         section {
-            padding: 20px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .logos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .logos img {
+            max-height: 80px;
         }
         .chart {
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .chart img {
+            max-width: 100%;
         }
         footer {
             background-color: #003366;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        img.logo {
-            max-width: 200px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://i.imgur.com/lCAl5Na.png" alt="Capytal Cable Corp Logo" class="logo">
         <h1>Capytal Cable Corp</h1>
         <p>Fiber Optic Infrastructure Experts</p>
     </header>
-
     <section>
-        <h2>About Us</h2>
-        <p>We specialize in the installation of fiber optic infrastructure across multiple U.S. states including Texas, Florida, SC, NC, Missouri, Mississippi, Louisiana, Michigan, Minnesota, and Georgia. We've proudly served clients such as Squan, SEC, AT&T, Ansco & Associates, Lightspeed, and Bridgepoint.</p>
-
-        <h2>Services</h2>
-        <ul>
-            <li>Strand and Fiber Installation – 50%</li>
-            <li>Direct Buried Fiber – 25%</li>
-            <li>Aerial Jumpers – 10%</li>
-            <li>Pole Transfers – 8%</li>
-            <li>Pole Removals – 7%</li>
-        </ul>
-
+        <h2>Our Partners</h2>
+        <div class="logos">
+            <img src="images/at&t.png" alt="AT&T">
+            <img src="images/squan.png" alt="Squan">
+            <img src="images/lightspeed.png" alt="Lightspeed">
+            <img src="images/sec.png" alt="SEC">
+            <img src="images/ansco.png" alt="Ansco">
+            <img src="images/bridgepoint.png" alt="Bridgepoint">
+            <img src="images/capytal_logo.png" alt="Capytal Cable Corp">
+        </div>
         <div class="chart">
-            <img src="https://i.imgur.com/GOUmVXe.png" alt="Service Distribution Chart" width="100%">
+            <h2>Project Breakdown</h2>
+            <img src="images/chart.png" alt="Work Distribution">
         </div>
     </section>
-
     <footer>
         Contact us: capytalcablecorp@gmail.com
     </footer>
